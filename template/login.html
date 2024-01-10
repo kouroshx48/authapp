@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>login</title>
+</head>
+<body>
+    <h1>login to your account</h1><br>
+    <form action="" method="post">
+        {% csrf_token %}
+        <label for="username">User Name</label><br>
+        <input type="text" value="" id="uname" name="uname"><br>
+        <label for="password">password</label><br>
+        <input type="password" value="" id="password" name="password"><br><br>
+        <input type="submit" value="login">
+    </form>
+
+    <h3>{{login_msg}}</h3>
+
+</body>
+</html>

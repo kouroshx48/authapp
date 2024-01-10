@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>register</title>
+</head>
+<body>
+    
+    <h1>register a new account</h1>
+    <h2>{{members}}</h2>
+    <h2>{{usernames}}</h2>
+    <h2>{{emails}}</h2>
+    <form action="" method="post" >
+        {% csrf_token %}
+        <label for="user_name">User Name</label><br>
+        <input type="text" value= "" id="uname" name="uname"><br>
+        <label for="email">Email</label><br>
+        <input type="email" value= "" id="email",  name= "email"><br>
+        <label for="password">password</label><br>
+        <input type="password" value="" id="password" name="password"><br><br>
+        
+        <input type="submit" value="register">
+        
+        <h3>{{registration_msg}}</h3>
+
+
+    </form>
+</body>
+</html>
